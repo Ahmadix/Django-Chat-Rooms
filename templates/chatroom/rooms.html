@@ -16,7 +16,7 @@
   <div id="chat_header" class="mt-3">
     <div class="alert alert-success alert-dismissible text-center mt-3">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      Hello {{ user }}!
+ {{ user }}! السلام عليكم سي
     </div>
   </div>
 
@@ -53,6 +53,7 @@ $(document).ready(function(){
   let chatSocket = new WebSocket(
     wsStart
       + window.location.host
+      + ':8001'
       + '/ws/chatrooms/'
       + roomName
       + '/'

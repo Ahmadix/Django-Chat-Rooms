@@ -5,7 +5,7 @@ from .models import Room, Message
 
 class TaskInline(admin.TabularInline):
     model = Message
-    extra = 3
+    extra = 0
 
 class RoomAdmin(admin.ModelAdmin):
     fieldsets = [
